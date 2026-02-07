@@ -1,0 +1,94 @@
+{
+  "baseline": {
+    "name": "logreg_baseline",
+    "f1": 0.2222222222222222,
+    "recall": 0.8363636363636363,
+    "report": {
+      "0": {
+        "precision": 0.9403973509933775,
+        "recall": 0.3120879120879121,
+        "f1-score": 0.46864686468646866,
+        "support": 4550.0
+      },
+      "1": {
+        "precision": 0.12813370473537605,
+        "recall": 0.8363636363636363,
+        "f1-score": 0.2222222222222222,
+        "support": 550.0
+      },
+      "accuracy": 0.3686274509803922,
+      "macro avg": {
+        "precision": 0.5342655278643768,
+        "recall": 0.5742257742257741,
+        "f1-score": 0.34543454345434543,
+        "support": 5100.0
+      },
+      "weighted avg": {
+        "precision": 0.8528002911028085,
+        "recall": 0.3686274509803922,
+        "f1-score": 0.44207165814620675,
+        "support": 5100.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        1420,
+        3130
+      ],
+      [
+        90,
+        460
+      ]
+    ]
+  },
+  "xgb": {
+    "name": "xgb",
+    "f1": 0.2188183807439825,
+    "recall": 0.9090909090909091,
+    "report": {
+      "0": {
+        "precision": 0.9537037037037037,
+        "recall": 0.22637362637362637,
+        "f1-score": 0.36589698046181174,
+        "support": 4550.0
+      },
+      "1": {
+        "precision": 0.12437810945273632,
+        "recall": 0.9090909090909091,
+        "f1-score": 0.2188183807439825,
+        "support": 550.0
+      },
+      "accuracy": 0.3,
+      "macro avg": {
+        "precision": 0.53904090657822,
+        "recall": 0.5677322677322677,
+        "f1-score": 0.29235768060289713,
+        "support": 5100.0
+      },
+      "weighted avg": {
+        "precision": 0.8642666298138936,
+        "recall": 0.3,
+        "f1-score": 0.35003556284518306,
+        "support": 5100.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        1030,
+        3520
+      ],
+      [
+        50,
+        500
+      ]
+    ]
+  },
+  "best_params": {
+    "xgb__subsample": 0.9,
+    "xgb__n_estimators": 600,
+    "xgb__min_child_weight": 5,
+    "xgb__max_depth": 3,
+    "xgb__learning_rate": 0.1,
+    "xgb__colsample_bytree": 0.8
+  }
+}
